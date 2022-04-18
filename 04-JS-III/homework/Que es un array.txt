@@ -1,0 +1,3 @@
+Un array es un conjunto o cadena de elementos(pueden ser de cualquier tipo de datos),
+ ordenados, que declaramos y podemos en un futuro, agregar mas elementos, eliminar, 
+ o modificar todas las veces que queramos. Es un contenedor de almacenamiento.
