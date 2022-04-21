@@ -18,7 +18,6 @@ function crearUsuario() {
   Usuario.prototype.saludar = function() {
     return 'Hola, mi nombre es ' + this.nombre;
   }
-
   return Usuario;
 }
 
@@ -28,7 +27,7 @@ function agregarMetodoPrototype(Constructor) {
   // Tu código:
   Constructor.prototype.saludar = function() {
     return 'Hello World!';
-  };
+  }
 }
 
 function agregarStringInvertida() {
@@ -43,7 +42,7 @@ function agregarStringInvertida() {
       stringInvertida = stringInvertida + this.charAt(i);
     }
     return stringInvertida;
-  };
+  }
 }
 
 // ---------------------------------------------------------------------------//
@@ -79,8 +78,8 @@ function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Con esta función vamos a crear una nueva persona a partir de nuestro constructor de persona (creado en el ejercicio anterior)
   //Recibirá los valores "Juan", "Perez", 22, "Saavedra 123" para sus respectivas propiedades
   //Devolver la nueva persona creada
-  const persona = new Persona(nombre, apellido, edad, dir);
-    return persona;
+  const persona = new Persona(nombre, apellido, edad, dir)
+  return persona;
 }
   
 function agregarMetodo() {

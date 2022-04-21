@@ -20,7 +20,7 @@ function agregarPropiedad(objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
-    objeto['property'] = null
+    objeto[property] = null
     return objeto;
 }
 
@@ -90,7 +90,7 @@ function verificarPassword(usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
-  if(password === objeto['password']){
+  if(usuario['password'] === password) {
     return true;
 }
 return false;

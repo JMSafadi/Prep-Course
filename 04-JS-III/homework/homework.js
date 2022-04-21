@@ -26,10 +26,11 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  var array = [];
-  for (var i = 0; i < array.length; i++){
-    console.log(array[i] + 1)
-  } return array
+  var nuevoArray = [];
+  for(var i = 0; i < array.length; i++) {
+    nuevoArray[i] = array[i] + 1;
+  }
+  return nuevoArray;
 }
 
 
@@ -58,7 +59,7 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
- return palabras.jion(' ');
+ return palabras.join(' ');
 }
 
 
@@ -79,11 +80,11 @@ function agregarNumeros(numeros) {
   // Suma todos los enteros y devuelve el valor
   // Tu código:
   var suma = 0;
-    for (var i = 0; i < numeros.length; i++){
-        suma = suma + numeros[i];
-    }
-    return suma;
-}
+  for(var i = 0; i < numeros.length; i++) {
+    suma = suma + numeros[i];
+  }
+  return suma;
+
 }
 
 
@@ -140,7 +141,7 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  f(numeroDeDia === 1 || numeroDeDia === 7 ) {
+  if(numeroDeDia === 1 || numeroDeDia === 7 ) {
     return "Es fin de semana";
   } 
   return "Es dia Laboral";
@@ -162,7 +163,7 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  or (var i =0 ; i < arreglo.length - 1; i++) {
+  for (var i =0 ; i < arreglo.length - 1; i++) {
     if(arreglo[i] !== arreglo[i+1]){
       return false
     }
